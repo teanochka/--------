@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap">
+    <title>mir sveta</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background-color: #fffefe;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="light">
+        </div>
+        <div class="search-container">
+            <div>
+                <img class="search-icon" src="img/search.png" alt="">
+                <input type="text">
+            </div>
+        </div>
+        <div class="location" style="flex:0.5">
+            <img class="icon" src="img/location.png" alt="location">
+            <div>Москва</div>
+        </div>
+        <div class="phone-number">
+            <img class="icon" src="img/telephone.png" alt="telephone">
+            <div>+7 (495) 128-11-38</div>
+        </div>
+        <div class="work-hours">
+            <img class="icon" src="img/clock.png" alt="clock">
+            <div>Ежедневно с 9:00 до 22:00</div>
+        </div>
+        <div class="cart">
+                26 546 ₽
+            <div class="cart-icon">
+                <img src="img/cart.png" alt="cart">
+                <div class="cart-count">5</div>
+            </div>
+        </div>
+        <div class="icons">
+            <img src="img/diagram.png" alt="stats">
+        </div>
+        <div class="icons">
+            <img src="img/heart.png" alt="heart">
+        </div>
+    </header>
+    <div class="navbar-container">
+        <div class="navbar">
+            <div class="navbar-left">
+                <div class="dropdown">
+                    <button class="nav-button">каталог товаров<span>+</span></button>
+                    <div class="dropdown-content">
+                        <div class="left-column">
+                            <h3>По типу</h3>
+                            <li><a href="#">галогенные</a></li>
+                            <li><a href="#">энергосберегающие</a></li>
+                            <li><a href="#">светодиодные</a></li>
+                            <li><a href="#">накаливания</a></li>
+                            <li><a href="#">люминесцентные</a></li>
+                            <li><a href="#">светодиодные ленты</a></li>
+                            <li><a href="#">светодиодные модули</a></li>
+                        </div>
+                        <div class="right-column">
+                            <div class="content">
+                                <h3>Лампы</h3>
+                                <div class="categories">
+                                    <div>
+                                        <h4>По цоколю</h4>
+                                        <ul class="column-list">
+                                            <li><a href="#">R7s</a></li>
+                                            <li><a href="#">E14</a></li>
+                                            <li><a href="#">G9</a></li>
+                                            <li><a href="#">GU10</a></li>
+                                            <li><a href="#">G4</a></li>
+                                            <li><a href="#">G5.3</a></li>
+                                            <li><a href="#">E27</a></li>
+                                            <li><a href="#">GX53</a></li>
+                                            <li><a href="#">GU5.3</a></li>
+                                            <li><a href="#">GU4</a></li>
+                                            <li><a href="#">AR111</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h4>По мощности</h4>
+                                        <ul class="column-list">
+                                            <li><a href="#">40 Вт</a></li>
+                                            <li><a href="#">60 Вт</a></li>
+                                            <li><a href="#">100 Вт</a></li>
+                                            <li><a href="#">5 Вт</a></li>
+                                            <li><a href="#">7 Вт</a></li>
+                                            <li><a href="#">12 Вт</a></li>
+                                            <li><a href="#">35 Вт</a></li>
+                                            <li><a href="#">18 Вт</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <h4>По цвету</h4>
+                                            <li><a href="#">желтый</a></li>
+                                            <li><a href="#">желто-белый (теплый)</a></li>
+                                            <li><a href="#">белый (холодный)</a></li>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <h3>Светодиодные ленты</h3>
+                                <div class="categories">
+                                    <div class="column">
+                                        <div>
+                                            <h4>Влагозащищенные</h4>
+                                            <li><a href="#">да</a></li>
+                                            <li><a href="#">нет</a></li>
+                                        </div>
+                                        <div>
+                                            <h4>Продажа по</h4>
+                                            <li><a href="#">штукам</a></li>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h4>Цвет свечения</h4>
+                                        <li><a href="#">белый</a></li>
+                                        <li><a href="#">теплый-белый</a></li>
+                                        <li><a href="#">разноцветный</a></li>
+                                    </div>
+                                    <div>
+                                        <h4>Мощность</h4>
+                                        <li><a href="#">7,2 Вт</a></li>
+                                    </div>
+                                </div>     
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="nav-button">бренды<span>+</span></button>
+                <button class="nav-button">стили<span>+</span></button>
+            </div>
+            <div class="navbar-right">
+                <button class="nav-button">о компании</button>
+                <button class="nav-button">гарантия/возврат</button>
+                <button class="nav-button">доставки/оплата</button>
+                <button class="nav-button">отзывы</button>
+                <button class="nav-button">контакты</button>
+            </div>
+        </div>
+    </div>
+    <div class="container-offers">
+        <div class="left-column">
+            <img src="img/news 1.png" alt="news">
+        </div>
+        <div class="right-column">
+            <img src="img/news 2.png" alt="news">
+            <img src="img/news 3.png" alt="news">
+        </div>
+    </div>
+    <div class="stripe-wrapper">
+        <div class="stripe-container"></div>
+        <h3>интернет-магазин светильников light</h3>
+        <div class="stripe-container"></div>
+    </div>
+    <div class="container-categories">
+        <img src="img/chandeliers.png" alt="chandeliers">
+        <img src="img/bra.png" alt="bra">
+        <img src="img/floor lamp.png" alt="floor lamp">
+        <img src="img/ceiling lamps.png" alt="ceiling lamps">
+        <img src="img/desk lamps.png" alt="desk lamps">
+        <img src="img/build-in lamps.png" alt="build-in lamps">
+        <img src="img/street lighters.png" alt="street lighters">
+        <img src="img/lightbulbs.png" alt="lightbulbs">
+    </div>
+    <div class="stripe-wrapper">
+        <div class="stripe-container"></div>
+        <h4>хиты продаж</h4>
+        <div class="stripe-container"></div>
+    </div>
+    <div class="container-hits">
+        <div class="arrow-left">
+            <img src="img/arrow left.png">
+        </div>
+        <div class="image-carousel">
+            <div class="product-card">
+                <div class="badges">
+                    <div class="new-badge">NEW</div>
+                </div>
+                <img src="img/product1.png" alt="Product Image">
+                <h5>Подвесная люстра Mytony Grazia MOD046PL-08CH</h5>
+                <div class="price">19’677 ₽</div>
+                <div class="old-price">29’370 ₽</div>
+                <button>В корзину</button>
+            </div>
+            <div class="product-card">
+                <img src="img/product2.png" alt="Product Image">
+                <div class="badges">
+                    <div class="discount-badge">-34%</div>
+                    <div class="economy-badge">экономия 580р</div>
+                </div>
+                <h5>Подвесная люстра Mytony Grazia MOD046PL-08CH</h5>
+                <div class="price">9’677 ₽</div>
+                <div class="old-price">29’370 ₽</div>
+                <button>В корзину</button>
+            </div>
+            <div class="product-card">
+                <img src="img/product3.png" alt="Product Image">
+                <h5>Подвесная люстра Mytony Grazia MOD046PL-08CH</h5>
+                <div class="price">9’677 ₽</div>
+                <div class="old-price">29’370 ₽</div>
+                <button>В корзину</button>
+            </div>
+            <div class="product-card">
+                <img src="img/product4.png" alt="Product Image">
+                <div class="badges">
+                    <div class="discount-badge">-34%</div>
+                </div>
+                <h5>Подвесная люстра Mytony Grazia MOD046PL-08CH</h5>
+                <div class="price">119’677 ₽</div>
+                <div class="old-price">29’370 ₽</div>
+                <button>В корзину</button>
+            </div>
+        </div>
+        <div class="arrow-right">
+            <img src="img/arrow right.png">
+        </div>
+    </div>
+    <div class="stripe-wrapper">
+        <div class="stripe-container"></div>
+        <h4>новинки</h4>
+        <div class="stripe-container"></div>
+    </div>
+    <div class="container-hits">
+        <div class="arrow-left">
+            <img src="img/arrow left.png">
+        </div>
+        <div class="image-carousel">
+            <div class="product-card">
+                <div class="badges">
+                    <div class="new-badge">NEW</div>
+                </div>
+                <img src="img/product1.png" alt="Product Image">
+                <h5>Подвесная люстра Mytony Grazia MOD046PL-08CH</h5>
+                <div class="price">19’677 ₽</div>
+                <div class="old-price">29’370 ₽</div>
+                <button>В корзину</button>
+            </div>
+            <div class="product-card">
+                <img src="img/product2.png" alt="Product Image">
+                <div class="badges">
+                    <div class="new-badge">NEW</div>
+                </div>
+                <h5>Подвесная люстра Mytony Grazia MOD046PL-08CH</h5>
+                <div class="price">9’677 ₽</div>
+                <div class="old-price">29’370 ₽</div>
+                <button>В корзину</button>
+            </div>
+            <div class="product-card">
+                <div class="badges">
+                    <div class="new-badge">NEW</div>
+                </div>
+                <img src="img/product3.png" alt="Product Image">
+                <h5>Подвесная люстра Mytony Grazia MOD046PL-08CH</h5>
+                <div class="price">9’677 ₽</div>
+                <div class="old-price">29’370 ₽</div>
+                <button>В корзину</button>
+            </div>
+            <div class="product-card">
+                <img src="img/product4.png" alt="Product Image">
+                <div class="badges">
+                    <div class="new-badge">NEW</div>
+                </div>
+                <h5>Подвесная люстра Mytony Grazia MOD046PL-08CH</h5>
+                <div class="price">119’677 ₽</div>
+                <div class="old-price">29’370 ₽</div>
+                <button>В корзину</button>
+            </div>
+        </div>
+        <div class="arrow-right">
+            <img src="img/arrow right.png">
+        </div>
+    </div>
+    <div class="stripe-wrapper">
+        <div class="stripe-container"></div>
+        <h4>стили</h4>
+        <div class="stripe-container"></div>
+    </div>
+    <div class="container-styles">
+        <div class="arrow-left">
+            <img src="img/arrow left.png">
+        </div>
+        <div class="image-carousel">
+            <img src="img/scandinavian.png" alt="scandinavian">
+            <img src="img/loft.png" alt="loft">
+            <img src="img/provance.png" alt="provance">
+            <img src="img/modern.png" alt="modern">
+        </div>
+        <div class="arrow-right">
+            <img src="img/arrow right.png">
+        </div>
+    </div>
+    <div class="stripe-wrapper">
+        <div class="stripe-container"></div>
+        <h4>бренды</h4>
+        <div class="stripe-container"></div>
+    </div>
+    <div class="container-brands">
+        <div class="arrow-left">
+            <img src="img/arrow left.png">
+        </div>
+        <div class="image-carousel">
+            <img src="img/arte lamp.png" alt="arte">
+            <img src="img/citilux.png" alt="citilux">
+            <img src="img/eglo.png" alt="eglo">
+            <img src="img/eurosvet.png" alt="eurosvet">
+            <img src="img/favourite.png" alt="favourite">
+        </div>
+        <div class="arrow-right">
+            <img src="img/arrow right.png">
+        </div>
+    </div>
+    <div class="about">
+        <img src="img/lighter.png" alt="lighter">
+        <div class="text">
+            <div class="title">
+                <h3>об интернет-магазине</h3>
+                <div class="stripe"></div>
+            </div>
+            <p><b>В нашем магазине</b> представлено свыше 100 000 светильников из России, Китая и таких европейских стран, как Австрия, Бельгия, Великобритания, Германия, Испания, Италия, Чехия. У нас можно
+                купить освещение для спальни, гостиной, кухни, коридора, ванной и детской комнат,
+            </p>
+            <p><b>Мы регулярно обновляем наш ассортимент</b> и делаем так, чтобы светильники у нас могли купить
+                все, вне зависимости от покупательской способности. Поэтому у нас есть как продукция эконом-класса по демократичным ценам, так товар премиум-класса по более высокой стоимости.
+            </p>
+            <p><b>Доставку заказов мы выполняем в Тулу и в другие города Тульской области</b> — Новомосковск, Донской, Алексин, Щекино, Ефремов, Богородицк, Плавск и прочие населенные пункты. Отправку
+                производим любой транспортной или курьерской компанией на Ваш выбор (Деловые линии,
+                ПЭК, СДЭК, Boxberry). Обращаем ваше внимание, что ограничений на минимальную стоимость
+                заказа для доставки в регионы у нас нет.  
+            </p>
+            <button>Подробнее о нашей компании</button>
+        </div>
+    </div>
+    <footer>
+        <div class="column">
+            <h3>Каталог</h3>
+            <p>Светильники</p>
+            <p>Люстры и потолочные светильники</p>
+            <p>Настенные светильники</p>
+            <p>Настольные лампы</p>
+            <p>Торшеры напольные</p>
+            <p>Точечные светильники</p>
+            <p>Уличные светильники</p>
+            <p>Лампочки</p>
+        </div>
+        <div class="column">
+            <h3>Покупателям</h3>
+            <p>О компании</p>
+            <p>Оплата и доставка</p>
+            <p>Гарантии и возврат товара</p>
+            <p>Контакты</p>
+            <p>Распродажа</p>
+            <p>Отзывы</p>
+            <p>Карта сайта</p>
+        </div>
+        <div class="column">
+            <h3>Контакты</h3>
+            <div class="phone-number">8-800-551-39-31</div>
+            <div class="text">
+                <p>Звонок по России бесплатный</p>
+                <p><u>Заказать обратный звонок</u></p>
+                <p><u>info@lstr-shop.r</u></p>
+                <p>Ареса пунктов самовывоза:</p>
+                <p>г.Тула, ул.Чмутова, д.158 В</p>
+                <p>д.Нижнее Елькино, 77</p>
+                <p>Tула, пр.Ленина, д.85, 1эт., оф.5</p>
+                <p><u>Посмотреть все адреса в Туле</u></p>
+                <p><u>с 9 до 23 часов без выходных</u></p>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
