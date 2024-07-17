@@ -25,7 +25,7 @@ header {
 .search-container input[type=text] {
     width: 100%;
     padding: 3px;
-    padding-left: calc(3px + 0.7vh + 1vw);
+    padding-left: calc(1.5vh + 1.5vw);
     border: 1px solid black;
     border-radius: 20px;
     font-size: calc(0.7vh + 0.7vw);
@@ -161,26 +161,26 @@ header {
     grid-column-gap: 1%;
     align-items: stretch;
 }
-    .container-offers .left-column {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .container-offers .left-column img {
-        max-width: 100%;
-        height: auto;
-        object-fit: contain;
-    }
-    .container-offers .right-column {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    .container-offers .right-column img {
-        width: 100%;
-        height: auto;
-        object-fit: contain;
-    }
+.container-offers .left-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-offers .left-column img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+.container-offers .right-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.container-offers .right-column img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
 @media (max-width: 600px) {
     .container-offers {
         margin: 3% 2%;
@@ -225,9 +225,35 @@ header {
     gap: 4%;
     grid-column-gap: 2%;
 }
+.container-categories .wrapper {
+    position: relative;
+    overflow: hidden;
+}
 .container-categories img {
     width: 100%;
     box-sizing: border-box;
+    display: block;
+}
+.container-categories .stripe-wrapper {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+.container-categories .stripe {
+    font-size: 2vw;
+}
+.container-categories .text {   
+    font-size: 1.6vw;
+    text-transform: uppercase;
+    text-align: center;
+}
+.container-categories a {
+    text-decoration: none;
+    color: black;
 }
 @media (max-width: 600px) {
     .container-categories {
@@ -241,27 +267,27 @@ header {
     justify-content: center; 
  }
  .product-card {
-     width: 100%;
-     text-align: center;
-     position: relative;
+    width: 100%;
+    text-align: center;
+    position: relative;
  }
  .product-card img {
-     width: 100%;
+    width: 100%;
  }
  .badges {
-     position: absolute;
-     top: 0%;
-     right: 0%;
-     display: flex;
-     flex-direction: column; 
-     align-items: flex-end;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-end;
  }
  .new-badge, .discount-badge, .economy-badge {
-     display: inline-block;
-     color: white;
-     padding: 0.2vw 0.2vw;
-     margin-bottom: 2%;
-     font-size: calc(0.5vh + 0.5vw);
+    display: inline-block;
+    color: white;
+    padding: 0.2vw 0.2vw;
+    margin-bottom: 2%;
+    font-size: calc(0.5vh + 0.5vw);
  }
  .new-badge {
      background-color: #4CAF50;
@@ -273,10 +299,11 @@ header {
      background-color: #555454;
  }
  .product-card h5 {
-     font-weight: bold;
-     text-decoration: underline;
-     font-size: calc(0.6vh + 0.6vw);
-     margin: 3% 0;
+    font-weight: bold;
+    text-decoration: underline;
+    color: black;
+    font-size: calc(0.6vh + 0.6vw);
+    margin: 3% 0;
  }
  .product-card .price {
      font-size: calc(1.2vh + 1.2vw);
@@ -298,6 +325,32 @@ header {
     font-weight: bolder;
     cursor: pointer;
     font-size: calc(0.6vh + 1vw);
+}
+.container-styles .wrapper {
+    position: relative;
+    overflow: hidden;
+}
+.container-styles .image {
+    display: block;
+}
+.container-styles .stripe-wrapper {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+.container-styles .stripe {
+    flex: 1;
+    background-color: white;
+    height: 0.05vh;
+}
+.container-styles .text {   
+    font-size: 1.5vw;
+    text-align: center;
+    color: white;
 }
 .image-carousel {
     width: 80%;
@@ -330,6 +383,11 @@ header {
 }
 .arrow-left img, .arrow-right img {
     max-width: 5vw;
+}
+.arrow-left img:hover, .arrow-right img:hover {
+    filter: brightness(0);
+    cursor: pointer;
+    transition: filter 0.3s ease;
 }
  @media (max-width: 600px) {
     .product-card .price {
